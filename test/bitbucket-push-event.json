@@ -1,0 +1,270 @@
+{
+    "push": {
+        "changes": [
+            {
+                "forced": false,
+                "old": {
+                    "name": "bitbucket",
+                    "links": {
+                        "commits": {
+                            "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commits/bitbucket"
+                        },
+                        "self": {
+                            "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/refs/branches/bitbucket"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/labiak/equestrian/branch/bitbucket"
+                        }
+                    },
+                    "default_merge_strategy": "merge_commit",
+                    "merge_strategies": [
+                        "merge_commit",
+                        "squash",
+                        "fast_forward"
+                    ],
+                    "type": "branch",
+                    "target": {
+                        "rendered": {},
+                        "hash": "d4515da407b53ceefc1fc6bf22f2c0250dde5976",
+                        "links": {
+                            "self": {
+                                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/labiak/equestrian/commits/d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                            }
+                        },
+                        "author": {
+                            "raw": "Taras Labiak <kissarat@gmail.com>",
+                            "type": "author"
+                        },
+                        "summary": {
+                            "raw": "Merge branch 'base-service' into bitbucket\n",
+                            "markup": "markdown",
+                            "html": "<p>Merge branch 'base-service' into bitbucket</p>",
+                            "type": "rendered"
+                        },
+                        "parents": [
+                            {
+                                "hash": "1e3194a3111a43bf3b1cfe9bda43e81ee960bbe0",
+                                "type": "commit",
+                                "links": {
+                                    "self": {
+                                        "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/1e3194a3111a43bf3b1cfe9bda43e81ee960bbe0"
+                                    },
+                                    "html": {
+                                        "href": "https://bitbucket.org/labiak/equestrian/commits/1e3194a3111a43bf3b1cfe9bda43e81ee960bbe0"
+                                    }
+                                }
+                            },
+                            {
+                                "hash": "147ed2e6df0a0a729ba10494564c14f111cdda18",
+                                "type": "commit",
+                                "links": {
+                                    "self": {
+                                        "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/147ed2e6df0a0a729ba10494564c14f111cdda18"
+                                    },
+                                    "html": {
+                                        "href": "https://bitbucket.org/labiak/equestrian/commits/147ed2e6df0a0a729ba10494564c14f111cdda18"
+                                    }
+                                }
+                            }
+                        ],
+                        "date": "2020-02-15T13:16:42+00:00",
+                        "message": "Merge branch 'base-service' into bitbucket\n",
+                        "type": "commit",
+                        "properties": {}
+                    }
+                },
+                "links": {
+                    "commits": {
+                        "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commits?include=163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b&exclude=d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/labiak/equestrian/branches/compare/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b..d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                    },
+                    "diff": {
+                        "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/diff/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b..d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                    }
+                },
+                "created": false,
+                "commits": [
+                    {
+                        "rendered": {},
+                        "hash": "163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b",
+                        "links": {
+                            "self": {
+                                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b"
+                            },
+                            "comments": {
+                                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b/comments"
+                            },
+                            "patch": {
+                                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/patch/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/labiak/equestrian/commits/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b"
+                            },
+                            "diff": {
+                                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/diff/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b"
+                            },
+                            "approve": {
+                                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b/approve"
+                            },
+                            "statuses": {
+                                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b/statuses"
+                            }
+                        },
+                        "author": {
+                            "raw": "Taras Labiak <kissarat@gmail.com>",
+                            "type": "author"
+                        },
+                        "summary": {
+                            "raw": "- bitbucket-pipelines.yml\n",
+                            "markup": "markdown",
+                            "html": "<ul>\n<li>bitbucket-pipelines.yml</li>\n</ul>",
+                            "type": "rendered"
+                        },
+                        "parents": [
+                            {
+                                "hash": "d4515da407b53ceefc1fc6bf22f2c0250dde5976",
+                                "type": "commit",
+                                "links": {
+                                    "self": {
+                                        "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                                    },
+                                    "html": {
+                                        "href": "https://bitbucket.org/labiak/equestrian/commits/d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                                    }
+                                }
+                            }
+                        ],
+                        "date": "2020-02-15T14:39:35+00:00",
+                        "message": "- bitbucket-pipelines.yml\n",
+                        "type": "commit",
+                        "properties": {}
+                    }
+                ],
+                "truncated": false,
+                "closed": false,
+                "new": {
+                    "name": "bitbucket",
+                    "links": {
+                        "commits": {
+                            "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commits/bitbucket"
+                        },
+                        "self": {
+                            "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/refs/branches/bitbucket"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/labiak/equestrian/branch/bitbucket"
+                        }
+                    },
+                    "default_merge_strategy": "merge_commit",
+                    "merge_strategies": [
+                        "merge_commit",
+                        "squash",
+                        "fast_forward"
+                    ],
+                    "type": "branch",
+                    "target": {
+                        "rendered": {},
+                        "hash": "163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b",
+                        "links": {
+                            "self": {
+                                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/labiak/equestrian/commits/163fbb4b44bfe9e0abd71c10ecec2bb7c5736b2b"
+                            }
+                        },
+                        "author": {
+                            "raw": "Taras Labiak <kissarat@gmail.com>",
+                            "type": "author"
+                        },
+                        "summary": {
+                            "raw": "- bitbucket-pipelines.yml\n",
+                            "markup": "markdown",
+                            "html": "<ul>\n<li>bitbucket-pipelines.yml</li>\n</ul>",
+                            "type": "rendered"
+                        },
+                        "parents": [
+                            {
+                                "hash": "d4515da407b53ceefc1fc6bf22f2c0250dde5976",
+                                "type": "commit",
+                                "links": {
+                                    "self": {
+                                        "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian/commit/d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                                    },
+                                    "html": {
+                                        "href": "https://bitbucket.org/labiak/equestrian/commits/d4515da407b53ceefc1fc6bf22f2c0250dde5976"
+                                    }
+                                }
+                            }
+                        ],
+                        "date": "2020-02-15T14:39:35+00:00",
+                        "message": "- bitbucket-pipelines.yml\n",
+                        "type": "commit",
+                        "properties": {}
+                    }
+                }
+            }
+        ]
+    },
+    "actor": {
+        "display_name": "Taras Labiak",
+        "uuid": "{1997a010-8583-4f66-acdc-5265bff53eda}",
+        "links": {
+            "self": {
+                "href": "https://api.bitbucket.org/2.0/users/%7B1997a010-8583-4f66-acdc-5265bff53eda%7D"
+            },
+            "html": {
+                "href": "https://bitbucket.org/%7B1997a010-8583-4f66-acdc-5265bff53eda%7D/"
+            },
+            "avatar": {
+                "href": "https://secure.gravatar.com/avatar/230f63b472ecd77aa09ae2b5b832c68f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTL-0.png"
+            }
+        },
+        "nickname": "taras.labiak",
+        "type": "user",
+        "account_id": "5e020685eb2ae70ea1de9881"
+    },
+    "repository": {
+        "scm": "git",
+        "website": null,
+        "name": "equestrian",
+        "links": {
+            "self": {
+                "href": "https://api.bitbucket.org/2.0/repositories/labiak/equestrian"
+            },
+            "html": {
+                "href": "https://bitbucket.org/labiak/equestrian"
+            },
+            "avatar": {
+                "href": "https://bytebucket.org/ravatar/%7B1a1e183e-74fe-4e0e-b946-b48c70ab8783%7D?ts=nodejs"
+            }
+        },
+        "full_name": "labiak/equestrian",
+        "owner": {
+            "display_name": "Taras Labiak",
+            "uuid": "{1997a010-8583-4f66-acdc-5265bff53eda}",
+            "links": {
+                "self": {
+                    "href": "https://api.bitbucket.org/2.0/users/%7B1997a010-8583-4f66-acdc-5265bff53eda%7D"
+                },
+                "html": {
+                    "href": "https://bitbucket.org/%7B1997a010-8583-4f66-acdc-5265bff53eda%7D/"
+                },
+                "avatar": {
+                    "href": "https://secure.gravatar.com/avatar/230f63b472ecd77aa09ae2b5b832c68f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTL-0.png"
+                }
+            },
+            "nickname": "taras.labiak",
+            "type": "user",
+            "account_id": "5e020685eb2ae70ea1de9881"
+        },
+        "type": "repository",
+        "is_private": true,
+        "uuid": "{1a1e183e-74fe-4e0e-b946-b48c70ab8783}"
+    }
+}
