@@ -1,0 +1,24 @@
+{
+  "name": "equestrian",
+  "version": "0.0.1",
+  "description": "Deployment system",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kissarat/equestrian.git"
+  },
+  "keywords": [
+    "deployment",
+    "ci",
+    "cd"
+  ],
+  "author": "Taras Labiak <kissarat@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kissarat/equestrian/issues"
+  },
+  "homepage": "https://github.com/kissarat/equestrian#readme"
+}
