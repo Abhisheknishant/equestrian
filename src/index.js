@@ -3,6 +3,7 @@ const { getHookChanges } = require('./bitbucket-hooks');
 const config = require('./config');
 const deploy = require('./deploy');
 const read = require('./read');
+const init = require('./init');
 
 function log(...args) {
     console.log([new Date().toLocaleTimeString(), ...args].join(' '));
@@ -41,9 +42,10 @@ const server = http.createServer(async (req, res) => {
 });
 
 if (config.scenarios && config.scenarios.length > 0) {
-    server.listen(config.port, () => {
-        console.log(`Listen http://localhost:${config.port}`);
-    });    
+    init()
+        .then(() => server.listen(config.port, () => {
+            console.log(`Listen http://localhost:${config.port}`);
+        }));
 } else {
     console.error('No scenarios found');
 }

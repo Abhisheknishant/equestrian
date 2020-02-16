@@ -2,7 +2,7 @@ const Bitbucket = {
     getHookChanges(data, repository, branches) {
         const isValidEvent = data
             && data.push && data.push.changes
-            && data.repository && data.repository.name === repository
+            && data.repository && data.repository.name === repository.name
         if (isValidEvent) {
             return data.push.changes
                 .map(change => change.new.name)

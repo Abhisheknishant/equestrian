@@ -1,5 +1,6 @@
 const config = require('./config');
 const { exec } = require('./run')
+const { substituteSettings } = require('./substitute')
 
 // run promises sequentially
 // const serial = funcs => funcs.reduce((promise, func) => promise.then(func), Promise.resolve());
@@ -10,20 +11,29 @@ const shells = {
 }
 
 function processOptionsOf(scenario) {
+    const env = substituteSettings(Object.assign(scenario.env, config.env), process.env);
     const options = {
-        cwd: scenario.cwd,
         shell: shells.bash,
-        env: Object.assign({}, process.env, scenario.env) 
-    }
+        env: {
+            ...process.env,
+            ...env,
+            DEPLOY_REPOSITORY: config.repository.name,
+            DEPLOY_REMOTE: config.repository.remote,
+            DEPLOY_BRANCH: scenario.branch
+        }
+    };
+
+    return options;
 }
 
 async function deploy(scenario) {
     try {
+        const options = processOptionsOf(scenario);
         const script = [];
+        // console.log(options);
         for(const command of scenario.script) {
-            script.push(await exec(command));
+            script.push(await exec(command, options));
         }
-        // const script = await serial((scenario.script || []).map(command => () => exec(command)));
         return { script };
     } catch (err) {
         console.error(err);
