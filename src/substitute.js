@@ -19,7 +19,7 @@ function substituteSettings(settings, params = {}, level = 10) {
     });
     if (modified > 0) {
         if (level <= 0) {
-            throw new Error(`Too deep dive`);
+            throw new Error(`Too deep dive (${level})`);
         }
         result = substituteSettings(result, params, level - 1);
     }

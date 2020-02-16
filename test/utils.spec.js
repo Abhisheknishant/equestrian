@@ -1,4 +1,4 @@
-const { strictEqual, deepStrictEqual } = require('assert');
+const { strictEqual, deepStrictEqual, throws } = require('assert');
 const { substituteParameters, substituteSettings } = require('../src/substitute');
 
 describe('utils', () => {
@@ -21,4 +21,15 @@ describe('utils', () => {
             HOME: '/home/user'
         })
     ));
+
+    it('substituteSettings error', () => {
+        throws(() => substituteSettings({
+            DEVELOPMENT_CONFIG_FILE: '{CONFIG_DIR}/development.json',
+            CONFIG_DIR: '{PROJECT_DIR}/config',
+            PROJECT_DIR: '{HOME}/project',
+        },
+        { HOME: '/home/user' }, 1),
+        new Error(`Too deep dive (0)`)
+        );
+    });
 });
