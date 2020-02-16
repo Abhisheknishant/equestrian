@@ -23,5 +23,8 @@
   "homepage": "https://github.com/kissarat/equestrian#readme",
   "devDependencies": {
     "mocha": "^7.0.1"
+  },
+  "dependencies": {
+    "config": "^3.2.5"
   }
 }
