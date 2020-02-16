@@ -1,5 +1,9 @@
 {
     "port": 9000,
+    "env": {
+        "DATA_ROOT": "{HOME}/equestrian",
+        "BUILD_DIR": "{HOME}/equestrian/build"
+    },
     "headers": {
         "content-type": "application/json"
     },
