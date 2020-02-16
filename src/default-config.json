@@ -1,5 +1,8 @@
 {
     "port": 9000,
+    "headers": {
+        "content-type": "application/json"
+    },
     "repository": "",
-    "hook": []
+    "scenarios": []
 }

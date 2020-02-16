@@ -4,6 +4,7 @@
   "description": "Deployment system",
   "main": "src/index.js",
   "scripts": {
+    "start": "EQUESTRIAN_CONFIG=config.json node src/index.js",
     "test": "mocha test/*.spec.js"
   },
   "repository": {

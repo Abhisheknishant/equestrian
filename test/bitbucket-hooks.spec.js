@@ -8,6 +8,7 @@ const testHookChanges = (expected, branches) => deepStrictEqual(
 );
 
 describe('bitbucket hooks', () => {
+    it('getHookChanges', () => testHookChanges(['bitbucket'], ['bitbucket']));
     it('getHookChanges single', () => testHookChanges(['bitbucket'], ['master', 'bitbucket']));
     it('getHookChanges absent', () => testHookChanges([], ['production', 'test']));
 });
